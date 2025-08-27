@@ -1,0 +1,51 @@
+Examples
+En los ejemplos siguientes se muestra cómo utilizar algunas condiciones de búsqueda comunes en la cláusula WHERE.
+
+A. Buscar una fila utilizando una igualdad simple
+-- Uses AdventureWorksDW  
+  
+SELECT EmployeeKey, LastName  
+FROM DimEmployee  
+WHERE LastName = 'Smith' ;
+
+B. Buscar las filas que contienen un valor como parte de una cadena
+-- Uses AdventureWorksDW  
+  
+SELECT EmployeeKey, LastName  
+FROM DimEmployee  
+WHERE LastName LIKE ('%Smi%');
+
+C. Buscar filas utilizando un operador de comparación
+-- Uses AdventureWorksDW  
+  
+SELECT EmployeeKey, LastName  
+FROM DimEmployee  
+WHERE EmployeeKey  <= 500;
+
+D. Buscar las filas que cumplen alguna de tres condiciones
+-- Uses AdventureWorksDW  
+  
+SELECT EmployeeKey, LastName  
+FROM DimEmployee  
+WHERE EmployeeKey = 1 OR EmployeeKey = 8 OR EmployeeKey = 12;
+
+E. Buscar las filas que deben cumplir varias condiciones
+-- Uses AdventureWorksDW  
+  
+SELECT EmployeeKey, LastName  
+FROM DimEmployee  
+WHERE EmployeeKey <= 500 AND LastName LIKE '%Smi%' AND FirstName LIKE '%A%';
+
+F. Buscar las filas que están en una lista de valores
+-- Uses AdventureWorksDW  
+  
+SELECT EmployeeKey, LastName  
+FROM DimEmployee  
+WHERE LastName IN ('Smith', 'Godfrey', 'Johnson');
+
+G. Buscar las filas que tienen un valor comprendido entre dos valores
+-- Uses AdventureWorksDW  
+  
+SELECT EmployeeKey, LastName  
+FROM DimEmployee  
+WHERE EmployeeKey Between 100 AND 200;
