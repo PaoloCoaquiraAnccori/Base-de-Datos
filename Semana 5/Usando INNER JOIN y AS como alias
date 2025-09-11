@@ -1,0 +1,10 @@
+USE Hospital;
+GO
+
+Select p.IdPaciente ,p.Nombre AS Paciente , Citas.IdMedico, Medicos.Nombre
+from Pacientes p
+INNER JOIN Citas
+	on p.IdPaciente = Citas.IdPaciente
+INNER JOIN Medicos
+	on Citas.IdMedico = Medicos.IdMedico
+Where p.Nombre LIKE 'p%';
