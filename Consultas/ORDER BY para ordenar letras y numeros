@@ -1,0 +1,6 @@
+USE Hospital;
+GO
+
+Select IdPaciente,Nombre,DNI From Pacientes
+ORDER BY Nombre ASC;
+--Order BY 1 DESC; --Selecciona 1 la columna 1 en select y DESC es de mayor a menor o inversa

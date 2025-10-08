@@ -1,0 +1,12 @@
+USE Hospital;
+GO
+
+Select*from Pacientes
+where Nombre LIKE 'Paolo%';--Empieza con la palabra "Paolo"
+Select*from Pacientes
+where Nombre LIKE '%Coaquira%';--Contiene la palabra "Coaquira"
+Select*from Pacientes
+where Nombre LIKE '%Coaquira';--Termina con la palabra "Coaquira"
+
+Select*from Pacientes
+where Nombre = 'Paolo Coaquira';
