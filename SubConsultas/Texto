@@ -1,0 +1,2 @@
+Las subconsultas son consultas anidadas dentro de una consulta principal. Son útiles para realizar operaciones complejas, donde se necesita
+consultar datos intermedios antes de obtener el resultado final. Se pueden usar con operadores de comparación, como <,>,<=,>=,=,<>, y con operadores lógicos como EX
