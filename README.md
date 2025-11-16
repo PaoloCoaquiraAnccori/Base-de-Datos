@@ -2,7 +2,6 @@
 
 - Paolo Josue Coaquira Anccori
 
-7
 8
 9
 10
